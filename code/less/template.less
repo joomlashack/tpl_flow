@@ -209,6 +209,20 @@ html {
 	}
 }
 
+body {
+	background: @color_four;
+
+	> .container {
+		.box-shadow(0 0 5px @grayLight);
+		background: @white;
+
+		> .inner-wrapper {
+			max-width: 970px;
+			margin: 0 auto;
+		}
+	}
+}
+
 /* Menus */
 
 #toolbar {
@@ -337,4 +351,13 @@ html {
 			}
 		}
 	}
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+	position: relative;
+}
+
+#featured {
+	background: @grayLighter;
 }
