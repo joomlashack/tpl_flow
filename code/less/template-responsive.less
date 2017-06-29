@@ -1,0 +1,57 @@
+@media (min-width: 980px) {
+
+	#header {
+
+		.navbar {
+			margin-bottom: 0;
+
+			.navbar-inner {
+				background-image: none;
+				.box-shadow(none);
+				padding: 0;
+				min-height: 50px;
+
+				.nav {
+					float: right;
+					margin-right: 0;
+
+					& > .active {
+						& > a,
+						&:hover,
+						&:focus {
+							.box-shadow(none);
+						}
+					}
+
+					& > li {
+						position: relative;
+
+						&:last-of-type > a {
+							padding-right: 0;
+						}
+
+						& > a {
+							font-weight: 400;
+							font-size: 16px;
+							padding-top: 10px;
+							padding-bottom: 10px;
+							text-transform: uppercase;
+						}
+
+						a {
+							transition: all 0.2s linear 0s;
+						}
+					}
+				}
+			}
+
+			.dropdown-menu {
+				padding: 10px 0;
+
+				li > a {
+					padding: 5px 15px;
+				}
+			}
+		}
+	}
+}
