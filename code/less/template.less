@@ -208,3 +208,52 @@ html {
 		}
 	}
 }
+
+/* Menus */
+
+.navbar {
+
+	.nav > .active {
+
+		> a,
+		> a:hover,
+		> a:focus {
+			.box-shadow(none);
+		}
+
+		> li {
+
+			> a {
+				text-shadow: none;
+			}
+		}
+	}
+}
+
+.navbar-inverse {
+
+	.nav {
+
+		> li {
+
+			> a {
+				text-shadow: none;
+			}
+		}
+	}
+}
+
+.dropdown-menu {
+	border: none;
+	.box-shadow(none);
+	.border-radius(0);
+
+	li > a {
+		padding: 5px 15px;
+	}
+
+	&:before,
+	&:after {
+		border: none !important;
+	}
+}
