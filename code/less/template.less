@@ -226,6 +226,30 @@ body {
 	}
 }
 
+a {
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+/* Buttons */
+
+.btn {
+	.box-shadow(none);
+	border: none;
+	color: @white;
+	text-shadow: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @white;
+	}
+}
+
 /* Menus */
 
 #toolbar {
@@ -358,7 +382,8 @@ body {
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-	position: relative;
+	right: unset;
+	left: unset;
 }
 
 /* Sections */
