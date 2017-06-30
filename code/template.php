@@ -36,7 +36,7 @@ defined('_JEXEC') or die('Restricted access');
             <div class="inner-wrapper">
 
                 <!-- header -->
-                <header id="header" class="m-b-1 p-t-1">
+                <header id="header" class="p-t-1">
                     <div class="row-fluid clearfix">
                         <w:logo name="menu" />
                         <div class="clear"></div>
@@ -167,35 +167,37 @@ defined('_JEXEC') or die('Restricted access');
 
 		<!-- footer -->
 		<div class="wrapper-footer">
-		   <footer id="footer" <?php
-			if ($this->params->get('stickyFooter', 1))
-				:
-				?> class="sticky"<?php
-			endif;
-				?>>
+           <div class="inner-wrapper">
+               <footer id="footer" <?php
+                if ($this->params->get('stickyFooter', 1))
+                    :
+                    ?> class="sticky"<?php
+                endif;
+                    ?>>
 
-				<?php
-					if ($this->countModules('bottom-menu'))
-					:
-				?>
-				<!-- bottom-menu -->
-				<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
-				<?php
-					endif;
-				?>
+                    <?php
+                        if ($this->countModules('bottom-menu'))
+                        :
+                    ?>
+                    <!-- bottom-menu -->
+                    <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
+                    <?php
+                        endif;
+                    ?>
 
-		   	<div class="<?php echo $wrightContainerClass; ?> footer-content p-t-1">
-			   	<?php
-						if ($this->countModules('footer'))
-						:
-					?>
-					<w:module type="<?php echo $wrightGridMode; ?>" name="footer" chrome="wrightflexgrid" />
-				 	<?php
-						endif;
-					?>
-					<w:footer />
-				</div>
-		   </footer>
+                <div class="<?php echo $wrightContainerClass; ?> footer-content p-t-1">
+                    <?php
+                            if ($this->countModules('footer'))
+                            :
+                        ?>
+                        <w:module type="<?php echo $wrightGridMode; ?>" name="footer" chrome="wrightflexgrid" />
+                        <?php
+                            endif;
+                        ?>
+                        <w:footer />
+                    </div>
+               </footer>
+           </div>
 		</div>
     <w:module type="none" name="debug" chrome="none" />
 	</body>

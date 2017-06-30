@@ -1,4 +1,27 @@
+@media (min-width: 1200px) {
+
+	body {
+
+		> .container {
+
+			> .inner-wrapper {
+				max-width: 970px;
+			}
+		}
+	}
+}
+
 @media (min-width: 980px) {
+
+	body {
+
+		> .container {
+
+			> .inner-wrapper {
+				max-width: 880px;
+			}
+		}
+	}
 
 	#header {
 
@@ -45,8 +68,21 @@
 				}
 
 				.dropdown-menu {
-					border-top: 3px solid @color_one;
+					border-top: 4px solid @color_one;
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 979px) {
+
+	body {
+
+		> .container {
+
+			> .inner-wrapper {
+				padding: 0 20px;
 			}
 		}
 	}

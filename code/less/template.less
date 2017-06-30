@@ -213,13 +213,16 @@ body {
 	background: @color_four;
 
 	> .container {
-		.box-shadow(0 0 5px @grayLight);
-		background: @white;
+		.box-shadow(0 0 3px #ccc);
 
 		> .inner-wrapper {
-			max-width: 970px;
 			margin: 0 auto;
 		}
+	}
+
+	> .container,
+	> .container-fluid {
+		background: @white;
 	}
 }
 
@@ -358,6 +361,21 @@ body {
 	position: relative;
 }
 
+/* Sections */
+
 #featured {
 	background: @grayLighter;
+	padding: 40px;
+}
+
+#footer {
+
+	> .container {
+		.box-shadow(0 0 3px #ccc);
+	}
+
+	.footer-content {
+		background: @color_three;
+		color: @white;
+	}
 }
