@@ -70,7 +70,7 @@
 // Scaffolding
 // -------------------------
 @bodyBackground:        @white;
-@textColor:             @grayDark;
+@textColor:             @color_three;
 
 
 // Links
@@ -91,7 +91,7 @@
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    @serifFontFamily; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontWeight:    normal;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -238,10 +238,10 @@
 
 @navbarInverseText:                      @white;
 @navbarInverseLinkColor:                 @white;
-@navbarInverseLinkColorHover:            @white;
+@navbarInverseLinkColorHover:            darken(@color_one, 30%);
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
-@navbarInverseLinkBackgroundHover:       darken(@color_one, 10%);
-@navbarInverseLinkBackgroundActive:      darken(@color_one, 10%);
+@navbarInverseLinkBackgroundHover:       @color_one;
+@navbarInverseLinkBackgroundActive:      @color_one;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
 @navbarInverseSearchBackgroundFocus:     @white;
