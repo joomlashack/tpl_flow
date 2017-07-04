@@ -4,7 +4,7 @@
 
 		> .container {
 
-			> .inner-wrapper {
+			.inner-wrapper {
 				max-width: 970px;
 			}
 		}
@@ -17,8 +17,20 @@
 
 		> .container {
 
-			> .inner-wrapper {
+			.inner-wrapper {
 				max-width: 880px;
+			}
+		}
+	}
+
+	#toolbar {
+
+		#nav-toolbar {
+
+			.menu {
+				width: 880px;
+				margin: 0 auto;
+				float: none;
 			}
 		}
 	}
@@ -56,7 +68,6 @@
 
 						& > a {
 							font-weight: 400;
-							font-size: 16px;
 							padding-top: 10px;
 							padding-bottom: 10px;
 							text-transform: uppercase;
@@ -70,8 +81,15 @@
 
 				.dropdown-menu {
 					border-top: 4px solid @color_one;
+					left: 15px;
 				}
 			}
+		}
+
+		#menu_primary {
+			position: absolute;
+			right: 0;
+			bottom: 0;
 		}
 	}
 }

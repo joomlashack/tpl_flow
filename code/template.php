@@ -28,15 +28,22 @@ defined('_JEXEC') or die('Restricted access');
                 :
                 ?>
                 <!-- toolbar -->
-                <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
+                <div class="toolbar-menu">
+                    <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
+                </div>
             <?php
             endif;
             ?>
 
             <div class="inner-wrapper">
+                <div class="inner-wrapper">
+                    <div class="toolbar-menu-toggle btn btn-primary">
+                        <i class="icon-angle-down"></i>
+                    </div>
+                </div>
 
                 <!-- header -->
-                <header id="header" class="p-t-1">
+                <header id="header" class="p-t-1 p-b-1">
                     <div class="row-fluid clearfix">
                         <w:logo name="menu" />
                         <div class="clear"></div>
@@ -200,5 +207,7 @@ defined('_JEXEC') or die('Restricted access');
            </div>
 		</div>
     <w:module type="none" name="debug" chrome="none" />
+
+        <script type='text/javascript' src='<?php echo JURI::root(true) ?>/templates/js_flux/js/flux.js'></script>
 	</body>
 </html>
