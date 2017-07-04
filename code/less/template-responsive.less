@@ -39,6 +39,23 @@
 				a {
 					font-size: @baseFontSize - 1;
 				}
+
+				> li {
+
+					&:first-of-type {
+
+						> a {
+							padding-left: 0;
+						}
+					}
+
+					&:last-of-type {
+
+						> a {
+							padding-right: 0;
+						}
+					}
+				}
 			}
 		}
 	}

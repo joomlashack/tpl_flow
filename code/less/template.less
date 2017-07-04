@@ -231,6 +231,9 @@ body {
 }
 
 a {
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
 
 	&:hover,
 	&:focus,
@@ -256,6 +259,69 @@ h6 {
 			display: none;
 		}
 	}
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border: 1px solid @color_six;
+	background: transparent;
+	.box-shadow(none);
+	.border-radius(2px);
+	color: @color_three;
+
+	&:focus {
+		border: 1px solid darken(@color_six, 10%);
+		.box-shadow(none);
+	}
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+	padding: 10px 15px;
+	line-height: 30px;
+	height: 42px;
+}
+
+::-webkit-input-placeholder {
+	color: @color_six;
+}
+
+::-moz-placeholder {
+	color: @color_six;
+}
+
+:-ms-input-placeholder {
+	color: @color_six;
+}
+
+:-moz-placeholder {
+	color: @color_six;
 }
 
 /* Buttons */
