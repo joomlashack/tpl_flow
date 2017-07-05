@@ -36,11 +36,19 @@ defined('_JEXEC') or die('Restricted access');
             ?>
 
             <div class="inner-wrapper">
-                <div class="inner-wrapper">
-                    <div class="toolbar-menu-toggle btn btn-primary">
-                        <i class="icon-angle-down"></i>
+
+                <?php
+                if ($this->countModules('toolbar'))
+                :
+                ?>
+                    <div class="inner-wrapper">
+                        <div class="toolbar-menu-toggle btn btn-primary">
+                            <i class="icon-angle-down"></i>
+                        </div>
                     </div>
-                </div>
+                <?php
+                endif;
+                ?>
 
                 <!-- header -->
                 <header id="header" class="p-t-1 p-b-1">
