@@ -154,6 +154,8 @@ defined('_JEXEC') or die('Restricted access');
                         <w:module name="sidebar2" />
                     </aside>
                 </div>
+            </div>
+
                 <?php
                     if ($this->countModules('grid-bottom'))
                         :
@@ -177,7 +179,6 @@ defined('_JEXEC') or die('Restricted access');
                     endif;
                 ?>
 
-            </div>
 		</div>
 
 		<!-- footer -->
