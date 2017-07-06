@@ -16,6 +16,16 @@
 			max-width: 970px;
 		}
 	}
+
+	#featured {
+
+		> [class*="moduletable"] {
+
+			> div {
+				background-size: 100% auto;
+			}
+		}
+	}
 }
 
 @media (min-width: 980px) {
@@ -154,5 +164,13 @@
 				padding: 0 20px;
 			}
 		}
+	}
+}
+
+@media (max-width: 767px) {
+
+	.boxed-mobile {
+		background: rgba(255, 255, 255, 0.7);
+		padding: 20px;
 	}
 }

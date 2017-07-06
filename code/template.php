@@ -179,6 +179,18 @@ defined('_JEXEC') or die('Restricted access');
                     endif;
                 ?>
 
+                <?php
+                if ($this->countModules('grid-bottom3'))
+                    :
+                    ?>
+                    <!-- grid-bottom3 -->
+                    <div id="grid-bottom3">
+                        <w:module type="row-fluid" name="grid-bottom3" chrome="wrightflexgrid" />
+                    </div>
+                <?php
+                endif;
+                ?>
+
 		</div>
 
 		<!-- footer -->
