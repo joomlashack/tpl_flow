@@ -213,7 +213,7 @@ defined('_JEXEC') or die('Restricted access');
                         endif;
                     ?>
 
-                <div class="<?php echo $wrightContainerClass; ?> footer-content p-t-1">
+                <div class="<?php echo $wrightContainerClass; ?> footer-content p-t-3">
                     <?php
                             if ($this->countModules('footer'))
                             :

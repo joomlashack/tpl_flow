@@ -305,19 +305,19 @@ input[type="color"] {
 }
 
 ::-webkit-input-placeholder {
-	color: @color_six;
+	color: darken(@color_six, 25%);
 }
 
 ::-moz-placeholder {
-	color: @color_six;
+	color: darken(@color_six, 25%);
 }
 
 :-ms-input-placeholder {
-	color: @color_six;
+	color: darken(@color_six, 25%);
 }
 
 :-moz-placeholder {
-	color: @color_six;
+	color: darken(@color_six, 25%);
 }
 
 /* Custom classes */
@@ -621,5 +621,123 @@ input[type="color"] {
 	.footer-content {
 		background: @color_three;
 		color: @white;
+		padding-top: 30px;
+	}
+
+	.navbar {
+		margin-bottom: 0;
+
+		.navbar-inner {
+			.box-shadow(none);
+
+			.nav {
+				float: none;
+				margin: 0 auto;
+				text-align: center;
+
+
+				> .active {
+
+					> a,
+					> a:hover,
+					> a:focus,
+					> a:active {
+						background: transparent;
+						color: @color_five;
+					}
+				}
+
+				> li {
+					float: none;
+
+					> a {
+						color: @white;
+						padding: 6px 15px;
+
+						&:hover,
+						&:focus,
+						&:active {
+							background: transparent;
+							color: @color_five;
+						}
+					}
+
+					.dropdown-menu {
+						display: block;
+						float: none;
+						position: relative;
+
+						li {
+
+							> a {
+								padding: 6px 15px;
+							}
+						}
+					}
+
+					&.dropdown {
+
+						> a {
+
+							.caret {
+
+								&:before {
+									top: 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.wrapper-bottom-menu {
+		z-index: 1;
+		position: relative;
+
+		> [class*="container"] {
+			background: @color_three;
+			padding-top: 50px;
+		}
+	}
+}
+
+/* Easy Social icons */
+
+#easy-social-icons {
+
+	.jssocialicons-horizontal{
+		.clearfix();
+		margin-left: 0;
+
+		> li {
+			display: inline-block;
+			float: none !important;
+		}
+	}
+
+	ul.jssocialicons > li > a {
+
+		&.iconset-circular {
+			background: @color_two;
+			color: @color_three;
+
+			&:hover,
+			&:focus,
+			&:active {
+				background: darken(@color_two, 5%);
+				color: @color_three;
+			}
+		}
+	}
+
+	div.jssocialicons-after {
+		margin-top: 40px;
+	}
+
+	div.jssocialicons-after,
+	div.jssocialicons-before {
+		font-size: 0.8em;
 	}
 }
