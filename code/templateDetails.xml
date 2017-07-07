@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="3.0" type="template" method="upgrade" client="site">
-	<name>js_flux</name>
-	<creationDate>June 29 2017</creationDate>
+	<name>js_flow</name>
+	<creationDate>July 07 2017</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>https://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2017. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
 	<version>0.0.1</version>
-    <description>TPL_JS_FLUX_XML_DESCRIPTION</description>
+    <description>TPL_JS_FLOW_XML_DESCRIPTION</description>
 
 	<languages folder="language">
 		<!-- en-GB -->
-		<language tag="en-GB">en-GB/en-GB.tpl_js_flux.ini</language>
-		<language tag="en-GB">en-GB/en-GB.tpl_js_flux.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_js_flow.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_js_flow.sys.ini</language>
 		<!-- es-ES -->
-		<language tag="es-ES">es-ES/es-ES.tpl_js_flux.ini</language>
-		<language tag="es-ES">es-ES/es-ES.tpl_js_flux.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_js_flow.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_js_flow.sys.ini</language>
 	</languages>
 
 	<files>
@@ -59,7 +59,7 @@
     </positions>
 
 	<config>
-		<fields name="params" addfieldpath="/templates/js_flux/wright/parameters/joomla_3.0">
+		<fields name="params" addfieldpath="/templates/js_flow/wright/parameters/joomla_3.0">
 			<fieldset name="basic">
                 <!-- Start of default Wright params -->
 				<field name="rebrand" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_LABEL" description="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_DESC">
