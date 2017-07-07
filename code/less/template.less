@@ -586,18 +586,37 @@ input[type="color"] {
 			.jss-navigation-buttons {
 
 				[class*="owl-"] {
-					transform: rotate(0deg);
+					transform: rotate(0deg) !important;
+					-moz-transform: rotate(0deg) !important;
+					-webkit-transform: rotate(0deg) !important;
+					border: none !important;
+					background: @color_one;
 				}
 
 				.owl-prev {
 
 					&:before {
-						/*content: '';
+						content: "\f104";
+					}
+				}
+
+				.owl-next {
+
+					&:before {
+						content: "\f105";
+					}
+				}
+
+				.owl-prev,
+				.owl-next {
+
+					&:before {
 						display: block;
-						width: 100px;
-						height: 100px;
-						background: @color_one;
-						transform: rotate(45deg);*/
+						font-family: FontAwesome;
+						font-weight: normal;
+						font-style: normal;
+						font-size: 40px;
+						color: @white;
 					}
 				}
 			}
