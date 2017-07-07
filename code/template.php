@@ -203,6 +203,17 @@ defined('_JEXEC') or die('Restricted access');
                 endif;
                     ?>>
 
+                   <div id="go-top">
+                       <a class="go-top-button" href="javascript:void(0)">
+                           <span class="icon-angle-up"></span>
+                       </a>
+                   </div>
+                   <div class="go-top-label">
+                       <div>
+                           <?php echo JText::_('TPL_JS_WRIGHT_BACK_TO_TOP'); ?>
+                       </div>
+                   </div>
+
                     <?php
                         if ($this->countModules('bottom-menu'))
                         :

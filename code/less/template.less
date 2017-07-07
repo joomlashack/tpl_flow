@@ -698,7 +698,7 @@ input[type="color"] {
 
 		> [class*="container"] {
 			background: @color_three;
-			padding-top: 50px;
+			padding-top: 80px;
 		}
 	}
 }
@@ -739,5 +739,49 @@ input[type="color"] {
 	div.jssocialicons-after,
 	div.jssocialicons-before {
 		font-size: 0.8em;
+	}
+}
+
+/* Go to top */
+
+#go-top {
+	position: absolute;
+	left: 50%;
+	top: -20px;
+
+	.go-top-button {
+		position: relative;
+		left: -50%;
+		z-index: 5;
+		width: 40px;
+		height: 40px;
+		background: @color_one;
+		display: block;
+		.border-radius(50%);
+		text-align: center;
+		line-height: 35px;
+		font-size: 28px;
+		color: @white;
+	}
+}
+
+.go-top-label {
+	position: absolute;
+	left: 50%;
+	top: 35px;
+
+	div {
+		position: relative;
+		left: -50%;
+		z-index: 5;
+		width: 100px;
+		height: 20px;
+		display: block;
+		font-size: 10px;
+		color: @white;
+		text-transform: uppercase;
+		line-height: 12px;
+		text-align: center;
+		font-family: @headingsFontFamily;
 	}
 }
