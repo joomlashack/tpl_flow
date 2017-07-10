@@ -646,6 +646,28 @@ input[type="color"] {
 			}
 		}
 
+		.jss-navigation-dots {
+
+			.owl-dot {
+
+				> div {
+					height: 8px !important;
+					background: @color_one;
+
+					> span {
+						display: none;
+					}
+				}
+
+				&.active {
+
+					> div {
+						background: @color_five;
+					}
+				}
+			}
+		}
+
 		.owl-carousel {
 
 			.jss-title-description {
