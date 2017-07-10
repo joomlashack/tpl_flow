@@ -863,13 +863,19 @@ input[type="color"] {
 		z-index: 5;
 		width: 40px;
 		height: 40px;
-		background: @color_one;
+		background: @linkColor;
 		display: block;
 		.border-radius(50%);
 		text-align: center;
 		line-height: 35px;
 		font-size: 28px;
 		color: @white;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: @linkColorHover;
+		}
 	}
 }
 
