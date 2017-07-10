@@ -350,19 +350,19 @@
 			li {
 
 				a {
-					color: darken(@color_one, 35%);
+					color: @white;
 
 					&:after {
-						border-left-color: darken(@color_one, 35%);
+						border-left-color: @white;
 					}
 
 					&:hover,
 					&:focus,
 					&:active {
-						color: @white;
+						color: fade(@white, 70%);
 
 						&:after {
-							border-left-color: @white;
+							border-left-color: fade(@white, 70%);
 						}
 					}
 				}
@@ -370,10 +370,10 @@
 				&.active {
 
 					a {
-						color: @white;
+						color: fade(@white, 70%);
 
 						&:after {
-							border-left-color: @white;
+							border-left-color: fade(@white, 70%);
 						}
 					}
 				}

@@ -326,7 +326,11 @@ input[type="tel"],
 input[type="color"] {
 	padding: 10px 15px;
 	line-height: 30px;
-	height: 42px;
+	.box-sizing(border-box);
+}
+
+.row-fluid [class*="span"] {
+	min-height: 40px;
 }
 
 ::-webkit-input-placeholder {
