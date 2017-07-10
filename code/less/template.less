@@ -235,6 +235,13 @@ body {
 			position: relative;
 			margin-top: 45px;
 		}
+
+		#toolbar {
+
+			> .navbar {
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -402,10 +409,6 @@ input[type="color"] {
 
 /* Menus */
 
-.wrapper-toolbar {
-	background: @color_one;
-}
-
 .toolbar-menu-toggle {
 	background: @linkColor;
 	.border-radius(0 0 @baseBorderRadius @baseBorderRadius);
@@ -563,10 +566,6 @@ input[type="color"] {
 
 .toolbar-menu {
 	border-bottom: 6px solid @color_one;
-
-	#toolbar {
-
-	}
 }
 
 #header {
