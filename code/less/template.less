@@ -228,6 +228,14 @@ body {
 	> .container-fluid {
 		background: @white;
 	}
+
+	> .container-fluid {
+
+		#menu {
+			position: relative;
+			margin-top: 45px;
+		}
+	}
 }
 
 a {
@@ -394,6 +402,10 @@ input[type="color"] {
 
 /* Menus */
 
+.wrapper-toolbar {
+	background: @color_one;
+}
+
 .toolbar-menu-toggle {
 	background: @linkColor;
 	.border-radius(0 0 @baseBorderRadius @baseBorderRadius);
@@ -474,6 +486,10 @@ input[type="color"] {
 				}
 			}
 		}
+	}
+
+	.navbar-inner {
+		.box-shadow(none);
 	}
 }
 
