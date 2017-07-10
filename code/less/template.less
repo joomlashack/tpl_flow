@@ -494,6 +494,10 @@ input[type="color"] {
 	&:after {
 		border: none !important;
 	}
+
+	.dropdown-menu {
+		.border-radius(0);
+	}
 }
 
 .nav {
@@ -600,7 +604,14 @@ input[type="color"] {
 					-moz-transform: rotate(0deg) !important;
 					-webkit-transform: rotate(0deg) !important;
 					border: none !important;
-					background: @color_one;
+					background: @linkColor;
+					text-indent: 0;
+
+					&:focus,
+					&:active,
+					&:hover {
+						background: @linkColorHover;
+					}
 				}
 
 				.owl-prev {
@@ -627,7 +638,7 @@ input[type="color"] {
 						font-family: FontAwesome;
 						font-weight: normal;
 						font-style: normal;
-						font-size: 40px;
+						font-size: 22px;
 						color: @white;
 						line-height: 50px;
 					}
