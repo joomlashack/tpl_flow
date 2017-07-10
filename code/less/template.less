@@ -257,6 +257,16 @@ p {
 	}
 }
 
+[class*="custom"] {
+
+	p {
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
 textarea,
 input[type="text"],
 input[type="password"],
@@ -609,6 +619,8 @@ input[type="color"] {
 
 				.owl-prev,
 				.owl-next {
+					width: 50px !important;
+					height: 50px !important;
 
 					&:before {
 						display: block;
@@ -617,16 +629,13 @@ input[type="color"] {
 						font-style: normal;
 						font-size: 40px;
 						color: @white;
+						line-height: 50px;
 					}
 				}
 			}
 		}
 
 		.owl-carousel {
-
-			.owl-item img {
-				max-width: 470px;
-			}
 
 			.jss-title-description {
 
