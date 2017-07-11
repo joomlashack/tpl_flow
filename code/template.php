@@ -91,7 +91,7 @@ defined('_JEXEC') or die('Restricted access');
                     if ($this->countModules('grid-top'))
                         :
                 ?>
-                <div id="grid-top" class="m-b-1">
+                <div id="grid-top" class="m-b-1 m-t-2">
                     <w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" />
                 </div>
                 <?php
@@ -120,7 +120,7 @@ defined('_JEXEC') or die('Restricted access');
                                 :
                         ?>
                         <!-- above-content -->
-                        <div id="above-content">
+                        <div id="above-content" class="m-b-2">
                             <w:module type="none" name="above-content" />
                         </div>
                         <?php
@@ -144,7 +144,7 @@ defined('_JEXEC') or die('Restricted access');
                                 :
                         ?>
                         <!-- below-content -->
-                        <div id="below-content" class="m-t-1">
+                        <div id="below-content" class="m-t-2">
                             <w:module type="none" name="below-content" />
                         </div>
                         <?php
