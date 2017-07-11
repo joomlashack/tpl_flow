@@ -282,6 +282,41 @@ p {
 	}
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+	> [class*="custom"] {
+		padding-top: 10px;
+	}
+}
+
+.caret {
+	border-top-color: @white;
+}
+
+.hero-unit {
+	.border-radius(0);
+	background-color: lighten(@color_one, 30%);
+}
+
+.breadcrumb {
+	.border-radius(0);
+
+	> li {
+		text-shadow: none;
+	}
+}
+
+.page-header {
+	padding-bottom: 0;
+	margin: 20px 0;
+	border-bottom: none;
+}
+
 textarea,
 input[type="text"],
 input[type="password"],
@@ -583,6 +618,16 @@ input[type="color"] {
 	}
 }
 
+#grid-bottom {
+
+	+ #grid-bottom2 {
+
+		> [class*="module"] {
+
+		}
+	}
+}
+
 #grid-bottom,
 #grid-bottom2,
 #grid-bottom3 {
@@ -590,11 +635,26 @@ input[type="color"] {
 	> [class*="row"] {
 
 		> [class*="module"] {
+			margin-bottom: 0;
 
 			> div {
 				padding: 40px;
 				background-size: cover;
 				background-position: center;
+			}
+
+			> h1,
+			> h2,
+			> h3,
+			> h4,
+			> h5,
+			> h6 {
+				padding: 0 40px;
+				margin: 40px 0 15px;
+
+				+ div {
+					padding-top: 0;
+				}
 			}
 		}
 	}
@@ -608,7 +668,8 @@ input[type="color"] {
 #grid-bottom,
 #grid-bottom2,
 #grid-bottom3,
-#featured {
+#featured,
+#top {
 
 	.jss-slider {
 		margin: 0 auto;
@@ -714,29 +775,61 @@ input[type="color"] {
 	.box-shadow(0 -1px 0 #ccc);
 }
 
-#featured {
-	border-bottom: 1px solid @white;
-	.box-shadow(0 1px 0 #ccc);
-
+#featured,
+#top {
 
 	> [class*="moduletable"] {
+
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			padding: 40px 0;
+			margin: 0 0 15px;
+			text-align: center;
+
+			+ div {
+				padding-top: 0;
+			}
+		}
 
 		> div {
 			padding: 40px;
 			background-size: cover;
 			background-position: center;
 		}
-	}
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		color: @textColor;
-		text-transform: uppercase;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			text-transform: uppercase;
+			color: @textColor;
+		}
 	}
+}
+
+#top {
+	background: lighten(@grayLighter, 5%);
+	border-top: 1px solid @white;
+	.box-shadow(0 -1px 0 #ccc);
+}
+
+#featured {
+	border-bottom: 1px solid @white;
+	.box-shadow(0 1px 0 #ccc);
+}
+
+#main-content {
+	margin: 20px 0;
+}
+
+#breadcrumbs {
+	margin-bottom: 30px;
 }
 
 #footer {

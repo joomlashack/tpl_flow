@@ -58,17 +58,19 @@ defined('_JEXEC') or die('Restricted access');
                     </div>
                 </header>
 
-                <!-- top -->
-                <?php
-                    if ($this->countModules('top'))
-                        :
-                ?>
-                    <w:module type="none" name="top" chrome="xhtml" />
-                <?php
-                    endif;
-                ?>
-
             </div>
+
+            <!-- top -->
+            <?php
+            if ($this->countModules('top'))
+                :
+                ?>
+                <div id="top">
+                    <w:module type="none" name="top" chrome="xhtml" />
+                </div>
+            <?php
+            endif;
+            ?>
 
 			<!-- featured -->
 			<?php
@@ -161,7 +163,7 @@ defined('_JEXEC') or die('Restricted access');
                         :
                 ?>
                 <!-- grid-bottom -->
-                <div id="grid-bottom" class="m-b-1">
+                <div id="grid-bottom">
                     <w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
                 </div>
                 <?php
