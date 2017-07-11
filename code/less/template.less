@@ -477,8 +477,16 @@ dl {
 
 .blog {
 
-	.items-row {
+	.items-row,
+	.items-leading > [class*="leading-"] {
 		margin-bottom: 30px;
+	}
+
+	.pagination {
+
+		> ul {
+			float: left;
+		}
 	}
 }
 
