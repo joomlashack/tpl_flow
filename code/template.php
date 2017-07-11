@@ -66,7 +66,9 @@ defined('_JEXEC') or die('Restricted access');
                 :
                 ?>
                 <div id="top">
-                    <w:module type="none" name="top" chrome="xhtml" />
+                    <div class="inner-wrapper">
+                        <w:module type="none" name="top" chrome="xhtml" />
+                    </div>
                 </div>
             <?php
             endif;
