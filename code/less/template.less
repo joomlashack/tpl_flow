@@ -1187,3 +1187,67 @@ dl {
 		font-family: @headingsFontFamily;
 	}
 }
+
+/* Module class suffixes */
+
+.moduletable,
+.module {
+
+	&_ms1 {
+		border: 2px solid @color_one;
+		padding: 20px;
+
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			color: @color_one;
+			margin-top: 0;
+		}
+	}
+
+	&_ms2 {
+		border: 2px dashed @color_one;
+		padding: 20px;
+
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			color: @color_one;
+			margin-top: 0;
+		}
+	}
+
+	&_ms3 {
+
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			color: @white;
+			background: @color_one;
+			text-align: center;
+		}
+	}
+
+	&_ms4 {
+
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6 {
+			color: @white;
+			background: @color_two;
+			text-align: center;
+		}
+	}
+}
