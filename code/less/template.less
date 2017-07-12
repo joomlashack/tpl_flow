@@ -453,6 +453,12 @@ input[type="color"] {
 	padding: 13px 26px;
 }
 
+.well {
+	.box-shadow(none);
+	border: none;
+	.border-radius(0);
+}
+
 /* Articles */
 
 dl {
@@ -460,7 +466,7 @@ dl {
 	&.article-info {
 		color: @gray;
 		padding-top: 0;
-		line-height: 34px;
+		//line-height: 34px;
 
 		dd {
 			margin-right: 5px;
@@ -468,18 +474,38 @@ dl {
 	}
 }
 
-.icons {
+.item-page,
+.blog-featured,
+.blog {
 
-	> .icons-actions {
-		margin-bottom: 10px;
+	.icons-actions {
+		margin-bottom: 5px;
+
+		.dropdown-menu {
+
+			.print-icon {
+
+				+ .email-icon {
+					border-top: 1px solid @color_six;
+				}
+			}
+		}
 	}
 }
 
+.blog-featured,
 .blog {
 
 	.items-row,
 	.items-leading > [class*="leading-"] {
 		margin-bottom: 30px;
+	}
+
+	.item {
+
+		> h2 {
+			margin-bottom: 5px;
+		}
 	}
 
 	.pagination {
