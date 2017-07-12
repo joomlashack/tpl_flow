@@ -318,6 +318,10 @@ h6 {
 	}
 }
 
+.label {
+	text-shadow: none;
+}
+
 .page-header {
 	padding-bottom: 0;
 	margin: 20px 0;
@@ -457,6 +461,70 @@ input[type="color"] {
 	.box-shadow(none);
 	border: none;
 	.border-radius(0);
+}
+/* Contact */
+
+.contact {
+
+	.thumbnail {
+		background: @white;
+	}
+
+	.dl-horizontal {
+		margin-bottom: 0;
+
+		&.contact-position dd {
+			margin-left: 0;
+			font-size: 1.5em;
+		}
+
+		dt {
+			text-align: center;
+			width: 31px;
+		}
+
+		dd {
+			margin-left: 40px;
+			margin-bottom: 5px;
+		}
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		 width: 100%;
+		 .box-sizing(border-box);
+		 min-height: 40px;
+	 }
+
+	textarea {
+		max-height: 120px;
+	}
+}
+
+/* Search */
+
+#searchForm {
+
+	.btn {
+		padding: 11px 16px;
+	}
+}
+
+/* Users */
+
+.form-horizontal {
+
+	&.well {
+		padding: 40px;
+	}
+
+	.control-group {
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
 }
 
 /* Articles */
