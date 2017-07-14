@@ -41,7 +41,7 @@ defined('_JEXEC') or die('Restricted access');
                 if ($this->countModules('toolbar'))
                 :
                 ?>
-                    <div class="inner-wrapper">
+                    <div class="inner-wrapper toolbar-toggle-wrapper">
                         <div class="toolbar-menu-toggle btn btn-primary">
                             <i class="icon-angle-down"></i>
                         </div>
