@@ -42,8 +42,10 @@ defined('_JEXEC') or die('Restricted access');
                 :
                 ?>
                     <div class="inner-wrapper toolbar-toggle-wrapper">
-                        <div class="toolbar-menu-toggle btn btn-primary">
-                            <i class="icon-angle-down"></i>
+                        <div>
+                            <div class="toolbar-menu-toggle btn btn-primary">
+                                <i class="icon-angle-down"></i>
+                            </div>
                         </div>
                     </div>
                 <?php
