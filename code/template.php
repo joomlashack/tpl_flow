@@ -21,36 +21,19 @@ defined('_JEXEC') or die('Restricted access');
 		<w:head />
 	</head>
 	<body class="<?php echo $wrightBodyClass ?>">
-		<div class="<?php echo $wrightContainerClass; ?>">
 
-            <?php
-            if ($this->countModules('toolbar'))
-                :
-                ?>
+		<div class="<?php echo $wrightContainerClass; ?> <?php echo (!$this->countModules('toolbar')) ? 'toolbar-menu-border' : ''; ?>">
+
+            <?php if ($this->countModules('toolbar')): ?>
+
                 <!-- toolbar -->
                 <div class="toolbar-menu">
                     <w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
                 </div>
-            <?php
-            endif;
-            ?>
+
+            <?php endif; ?>
 
             <div class="inner-wrapper">
-
-                <?php
-                if ($this->countModules('toolbar'))
-                :
-                ?>
-                    <div class="inner-wrapper toolbar-toggle-wrapper">
-                        <div>
-                            <div class="toolbar-menu-toggle btn btn-primary">
-                                <i class="icon-angle-down"></i>
-                            </div>
-                        </div>
-                    </div>
-                <?php
-                endif;
-                ?>
 
                 <!-- header -->
                 <header id="header" class="p-t-1 p-b-1">
