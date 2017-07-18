@@ -15,3 +15,4 @@
 defined('_JEXEC') or die('Restricted access');
 
 $backtop = $this->params->get('backtop', '1');
+$toolbar = $this->params->get('toolbar', 'navbar-fixed-top');

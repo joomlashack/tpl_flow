@@ -121,6 +121,10 @@
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
                 </field>
+                <field name="toolbar" type="radio" class="btn-group" default="navbar-fixed-top" label="TPL_JS_FLOW_TOOLBAR" description="TPL_JS_FLOW_TOOLBAR_DESC">
+                    <option value="navbar-fixed-top">TPL_JS_FLOW_TOOLBAR_FIXED</option>
+                    <option value="navbar-relative-top">TPL_JS_FLOW_TOOLBAR_RELATIVE</option>
+                </field>
             </fieldset>
 		</fields>
 	</config>
