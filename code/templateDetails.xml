@@ -116,6 +116,12 @@
 				<field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
                 <!-- End of default Wright params -->
             </fieldset>
+            <fieldset name="TPL_JS_FLOW_OPTIONS">
+                <field name="backtop" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_FLOW_GOTOP" description="TPL_JS_FLOW_GOTOP_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
 		</fields>
 	</config>
 </extension>

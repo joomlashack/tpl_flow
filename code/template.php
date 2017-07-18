@@ -192,16 +192,18 @@ defined('_JEXEC') or die('Restricted access');
                 endif;
                     ?>>
 
-                   <div id="go-top">
-                       <a class="go-top-button" href="javascript:void(0)">
-                           <span class="icon-angle-up"></span>
-                       </a>
-                   </div>
-                   <div class="go-top-label">
-                       <div>
-                           <?php echo JText::_('TPL_JS_WRIGHT_BACK_TO_TOP'); ?>
+                   <?php if($backtop) : ?>
+                       <div id="go-top">
+                           <a class="go-top-button" href="javascript:void(0)">
+                               <span class="icon-angle-up"></span>
+                           </a>
                        </div>
-                   </div>
+                       <div class="go-top-label">
+                           <div>
+                               <?php echo JText::_('TPL_JS_WRIGHT_BACK_TO_TOP'); ?>
+                           </div>
+                       </div>
+                   <?php endif; ?>
 
                     <?php
                         if ($this->countModules('bottom-menu'))
@@ -229,6 +231,9 @@ defined('_JEXEC') or die('Restricted access');
 		</div>
     <w:module type="none" name="debug" chrome="none" />
 
-        <script type='text/javascript' src='<?php echo JURI::root(true) ?>/templates/js_flow/js/flow.js'></script>
+        <?php if($backtop) : ?>
+            <script type='text/javascript' src='<?php echo JURI::root(true) ?>/templates/js_flow/js/flow.js'></script>
+        <?php endif; ?>
+
 	</body>
 </html>
