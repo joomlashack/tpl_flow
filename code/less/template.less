@@ -285,6 +285,18 @@ body {
 			padding: 40px 20px;
 		}
 	}
+
+	.toolbar-menu {
+		margin-right: -20px;
+		margin-left: -20px;
+	}
+
+	.navbar-fixed-top {
+
+		.navbar-inner {
+			padding: 0 20px;
+		}
+	}
 }
 
 a {
@@ -887,9 +899,11 @@ ul.navbar-inner {
 
 #toolbar {
 
-	> .navbar {
-		//border-bottom: 6px solid @color_one;
-		//position: relative;
+	.navbar-inner {
+
+		.container-fluid {
+			padding: 0;
+		}
 	}
 }
 
