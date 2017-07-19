@@ -681,23 +681,6 @@ dl {
 	}
 }
 
-/*.toolbar-menu-toggle {
-	background: @linkColor;
-	.border-radius(0 0 @baseBorderRadius @baseBorderRadius);
-	float: right;
-	padding: 3px 14px;
-
-	i {
-		font-size: @baseFontSize + 2;
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-		background: @linkColor;
-	}
-}*/
-
 #menu {
 
 	.navbar {
@@ -913,12 +896,31 @@ ul.navbar-inner {
 
 #header {
 
-	#logo {
+	.navbar {
 
-		/*img {
-			height: 100px;
-			width: auto;
-		}*/
+		.navbar-inner {
+
+			.nav {
+
+				& > li {
+
+					a {
+						text-shadow: none;
+
+						&.btn {
+							color: @white;
+
+							&:hover,
+							&:active,
+							&:focus {
+								color: @white;
+								background: @navbarLinkColorHover;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
