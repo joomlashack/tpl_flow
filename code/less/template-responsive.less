@@ -250,7 +250,7 @@
 					& > li {
 						position: relative;
 
-						&:last-of-type > a {
+						&:last-of-type > a:not(.btn) {
 							padding-right: 0;
 						}
 
@@ -263,6 +263,11 @@
 
 						a {
 							transition: all 0.2s linear 0s;
+
+							&.btn {
+								margin-left: 10px;
+								padding: 5px 10px;
+							}
 						}
 
 						> .dropdown-menu {
