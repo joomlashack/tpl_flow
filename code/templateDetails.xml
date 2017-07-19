@@ -28,7 +28,8 @@
 		<filename>index.php</filename>
 		<filename>template.php</filename>
 		<filename>templateDetails.xml</filename>
-		<filename>template_thumbnail.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>shackslides.json</filename>
 		<folder>css</folder>
 		<folder>html</folder>
 		<folder>images</folder>
@@ -40,7 +41,6 @@
         <position>toolbar</position>
         <position>logo</position>
         <position>top</position>
-        <position>top2</position>
         <position>menu</position>
         <position>featured</position>
         <position>grid-top</position>
