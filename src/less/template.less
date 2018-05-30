@@ -693,10 +693,33 @@ dl {
 
 					> a {
 
-						.caret{
+						&:not(.btn) {
 
-							&:before {
-								color: @color_two;
+							.caret {
+
+								&:before {
+									color: @color_two;
+								}
+							}
+						}
+						
+						&.dropdown-toggle {
+
+							&.btn {
+
+								@media (min-width: 980px) {
+									padding-right: 22px !important;
+								}
+							}
+
+							.caret {
+
+								&:before {
+
+									@media (max-width: 979px) {
+										top: 6px;
+									}
+								}
 							}
 						}
 					}
@@ -706,23 +729,59 @@ dl {
 	}
 }
 
+.btns() {
+
+	.btn {
+		background: @btnBackground !important;
+
+		&.btn-primary {
+			background: @btnPrimaryBackground !important;
+		}
+
+		&.btn-info {
+			background: @btnInfoBackground !important;
+		}
+
+		&.btn-success {
+			background: @btnSuccessBackground !important;
+		}
+
+		&.btn-warning {
+			background: @btnWarningBackground !important;
+		}
+
+		&.btn-danger {
+			background: @btnDangerBackground !important;
+		}
+
+		&.btn-inverse {
+			background: @btnInverseBackground !important;
+		}
+	}
+}
+
 .navbar {
 	font-family: @serifFontFamily;
 	text-transform: uppercase;
 
-	.nav > .active {
+	.nav {
 
-		> a,
-		> a:hover,
-		> a:focus {
-			.box-shadow(none);
-		}
+		> .active {
 
-		> li {
-
-			> a {
-				text-shadow: none;
+			> a,
+			> a:hover,
+			> a:focus {
+				.box-shadow(none);
 			}
+
+			> li {
+
+				> a {
+					text-shadow: none;
+				}
+			}
+
+			.btns();
 		}
 	}
 }
