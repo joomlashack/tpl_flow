@@ -846,30 +846,21 @@ ul.navbar-inner {
 
 			> a {
 
-				.caret {
-					border: none;
-
-					&:before {
-						content: "\f107";
-						font-family: FontAwesome;
-						font-size: 18px;
-						top: 2px;
-						position: absolute;
-						margin: 0 3px;
-					}
-				}
-
-				/*&:hover,
-				&:active,
-				&:focus {
+				@media (min-width: 980px) {
 
 					.caret {
+						border: none;
 
 						&:before {
-							content: "\f106";
+							content: "\f107";
+							font-family: FontAwesome;
+							font-size: 18px;
+							top: 2px;
+							position: absolute;
+							margin: 0 3px;
 						}
 					}
-				}*/
+				}
 			}
 		}
 	}
